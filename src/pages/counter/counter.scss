@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Manjari:100,400,700&display=swap');
+
+.counter {
+    
+    .coins {
+        display: flex;
+        flex-wrap: wrap;
+        width: 500px;
+        margin: 0 auto;
+        .add-coin{
+            padding: 20px 0;
+            width: 33%;
+            button {
+                background-color: transparent;
+                width: 100px;
+                height: 100px;
+                border: 0px;
+                outline: none;
+                cursor: pointer;
+                transition: .5s all ;
+                
+                &:active{
+                    // width: 120px;
+                    transform: rotateY(360deg);
+                }
+                img {
+                    max-width: 100%;
+                    display: block;
+                    height: auto;
+                }
+            }
+            .details {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                div {
+                    font-family: 'Manjari', sans-serif;
+                    font-size: 2rem;
+                    display: inline-block;
+                    &:first-child {
+                        margin-right: 40px;
+                       
+                    }
+                    &:last-child {
+                        cursor: pointer;
+                        color: red;
+                    }
+                }
+               
+            }
+    }
+    
+    }
+}
