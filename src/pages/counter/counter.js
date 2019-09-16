@@ -21,6 +21,7 @@ export default function Counter () {
     const [bigO, setCountBigO] = useState(0);
     const [bigT, setCountBigT] = useState(0);
     const [bigF, setCountBigF] = useState(0);
+    const [sum, setCountSum] = useState(0);
     
     useEffect(() => {
     //    document.title =`${count.length-1}`;
@@ -254,20 +255,21 @@ export default function Counter () {
             </div>
             <hr />
             <div className="sum">
-            <h2>
-                        sum:{
-                            (littleO * 0.01) +
-                            (littleT * 0.02) +
-                            (littleF * 0.05) +
-                            (littleTe * 0.10) +
-                            (littleTw * 0.20) +
-                            (littleFi * 0.50) +
-                            (bigO) +
-                            (bigT * 2) +
-                            (bigF * 5)
-                            }
-                            
-            </h2>
+                <h2>
+                            suma: { 
+                                    ((littleO * 0.01) +
+                                    (littleT * 0.02) +
+                                    (littleF * 0.05) +
+                                    (littleTe * 0.10) +
+                                    (littleTw * 0.20) +
+                                    (littleFi * 0.50) +
+                                    (bigO) +
+                                    (bigT * 2) +
+                                    (bigF * 5)).toFixed(2)
+                                
+                                }
+                                
+                </h2>
             </div>
 
         </div>

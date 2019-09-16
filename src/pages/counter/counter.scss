@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Manjari:100,400,700&display=swap');
 
 .counter {
-    
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: 'Manjari', sans-serif;
+                    font-size: 2rem;
     .coins {
         display: flex;
         flex-wrap: wrap;
-        width: 500px;
-        margin: 0 auto;
         .add-coin{
-            padding: 20px 0;
+            padding: 10px 0;
             width: 33%;
             button {
                 background-color: transparent;
@@ -20,8 +21,8 @@
                 transition: .5s all ;
                 
                 &:active{
-                    // width: 120px;
-                    transform: rotateY(360deg);
+                    width: 120px;
+                    // transform: rotateY(360deg);
                 }
                 img {
                     max-width: 100%;
@@ -35,8 +36,6 @@
                 align-items: center;
                 
                 div {
-                    font-family: 'Manjari', sans-serif;
-                    font-size: 2rem;
                     display: inline-block;
                     &:first-child {
                         margin-right: 40px;
@@ -49,7 +48,15 @@
                 }
                
             }
+        }
     }
-    
+    hr {
+        border-top: 3px solid;
+        border-radius: 100%;
+    }
+    .sum {
+        h2 {
+            margin: 0;
+        }
     }
 }
