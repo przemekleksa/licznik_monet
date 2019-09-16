@@ -9,25 +9,23 @@ import littleFifty from './img/50gr.png';
 import bigOne from './img/1zl.png';
 import bigTwo from './img/2zl.png';
 import bigFive from './img/5zl.png';
+import reset from './img/reset.png';
 
 
 export default function Counter () {
-    const [littleO, setCountO] = useState(0);
-    const [littleT, setCountT] = useState(0);
-    const [littleF, setCountF] = useState(0);
-    const [littleTe, setCountTe] = useState(0);
-    const [littleTw, setCountTw] = useState(0);
-    const [littleFi, setCountFi] = useState(0);
-    const [bigO, setCountBigO] = useState(0);
-    const [bigT, setCountBigT] = useState(0);
-    const [bigF, setCountBigF] = useState(0);
-    const [sum, setCountSum] = useState(0);
+    let [littleO, setCountO] = useState(0);
+    let [littleT, setCountT] = useState(0);
+    let [littleF, setCountF] = useState(0);
+    let [littleTe, setCountTe] = useState(0);
+    let [littleTw, setCountTw] = useState(0);
+    let [littleFi, setCountFi] = useState(0);
+    let [bigO, setCountBigO] = useState(0);
+    let [bigT, setCountBigT] = useState(0);
+    let [bigF, setCountBigF] = useState(0);
+
     
     useEffect(() => {
-    //    document.title =`${count.length-1}`;
-        let sum = (littleO * 0.01) +
-        (littleT * 0.02) +
-        (littleF * 0.05)
+        
     })
 
     return (
@@ -270,6 +268,19 @@ export default function Counter () {
                                 }
                                 
                 </h2>
+                <div className="reset" onClick={() => {
+                     setCountO(littleO = 0)
+                     setCountT(littleT = 0)
+                     setCountF(littleF = 0)
+                     setCountTe(littleTe = 0)
+                     setCountTw(littleTw = 0)
+                     setCountFi(littleFi = 0)
+                     setCountBigO(bigO = 0)
+                     setCountBigT(bigT = 0)
+                     setCountBigF(bigF = 0)     
+                }}>
+                    <img src={reset} alt="reset" />
+                </div>
             </div>
 
         </div>
