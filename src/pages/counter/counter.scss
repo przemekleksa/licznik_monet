@@ -104,7 +104,11 @@
             margin:0;
         }
         .sum {
-            padding-top: 10px;
+            padding-top: 20px;
+            justify-content: flex-end;
+            h2 {
+                padding-right:30px;
+            }
         }
     }
 }
