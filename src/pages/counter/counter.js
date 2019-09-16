@@ -27,7 +27,10 @@ export default function Counter () {
     useEffect(() => {
         
     })
-
+    if ("vibrate" in navigator) {
+        // vibration API supported
+      navigator.vibrate(1000);
+    }
     return (
         <div className="counter">
            <div className="coins">
