@@ -29,7 +29,7 @@ export default function Counter () {
     })
     if ("vibrate" in navigator) {
         // vibration API supported
-      navigator.vibrate(300);
+      navigator.vibrate(100);
     }
     return (
         <div className="counter">
