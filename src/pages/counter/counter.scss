@@ -11,24 +11,27 @@
         .add-coin{
             padding: 10px 0;
             width: 33%;
-            button {
-                background-color: transparent;
-                width: 100px;
-                height: 100px;
-                border: 0px;
-                outline: none;
-                cursor: pointer;
-                transition: .5s all ;
-                -webkit-tap-highlight-color: rgba(0,0,0,0);
-                &:active{
-                    width: 120px;
-                }
-                img {
-                    max-width: 100%;
-                    display: block;
-                    height: auto;
+            .add{
+                button {
+                    background-color: transparent;
+                    width: 100px;
+                    height: 100px;
+                    border: 0px;
+                    outline: none;
+                    cursor: pointer;
+                    transition: .5s all ;
+                    -webkit-tap-highlight-color: rgba(0,0,0,0);
+                    &:active{
+                        width: 120px;
+                    }
+                    img {
+                        max-width: 100%;
+                        display: block;
+                        height: auto;
+                    }
                 }
             }
+
             .details {
                 display: flex;
                 justify-content: space-between;
@@ -68,6 +71,40 @@
             img {
                 width: 48px;
             }
+        }
+    }
+}
+
+@media (max-height: 300px) {
+    .counter {
+        max-width: 100%;
+        .coins {
+            .add-coin {
+                width: 20%;
+                display: flex;
+                .add {
+                    width: 60%;
+                    button {
+                        width: 70px;
+                        height: 70px;
+                        &:active{
+                            width: 90px;
+                        }
+                        img {
+                            
+                        }
+                    }
+                }
+                .details {
+                    flex-direction: column;
+                }
+            }
+        }
+        hr {
+            margin:0;
+        }
+        .sum {
+            padding-top: 10px;
         }
     }
 }
